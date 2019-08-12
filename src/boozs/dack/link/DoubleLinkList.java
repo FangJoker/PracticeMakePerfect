@@ -49,7 +49,7 @@ public class DoubleLinkList {
      */
     public Boolean addElem(Object elem) {
         DoubleNode newNode = new DoubleNode(elem);
-        // 若链表为空，直接在头结点和尾结点中插入
+        // 若链表为空，直接在头结点和尾结点中间插入
         if (isEmpty()) {
             head.setNext(newNode);
             tail.setPre(newNode);
@@ -124,15 +124,19 @@ public class DoubleLinkList {
         if (isOutBound(index)) {
             return null;
         }
+        // 如果大于表长，则取值 indexMod表长-1
+        if (index>length){
+            index = index/length-1;
+        }
         if (index > length / 2) {
-            DoubleNode indexNode = tail;
-            for (int j = length; j > index - 1; j--) {
+            DoubleNode indexNode = tail.getPre();
+            for (int j = length; j > index ; j--) {
                 indexNode = indexNode.getPre();
             }
             return indexNode.getElem();
         } else {
-            DoubleNode indexNode = head;
-            for (int j = 0; j < index - 1; j++) {
+            DoubleNode indexNode = head.getNext();
+            for (int j = 0; j < index ; j++) {
                 indexNode = indexNode.getNext();
             }
             return indexNode.getElem();
@@ -177,7 +181,7 @@ public class DoubleLinkList {
      * @return
      */
     public Boolean isOutBound(int index) {
-        if (index > length || index < 1) {
+        if (index < 0) {
             System.out.println("越界");
             return true;
         } else {
