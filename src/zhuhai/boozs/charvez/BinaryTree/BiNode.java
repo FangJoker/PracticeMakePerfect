@@ -1,4 +1,4 @@
-package boozs.charvez.BinaryTree;
+package zhuhai.boozs.charvez.BinaryTree;
 
 /**
  * 二叉链表结点

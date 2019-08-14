@@ -1,4 +1,4 @@
-package boozs.charvez.link;
+package zhuhai.boozs.charvez.link;
 
 /**
  * 双向链表的结点

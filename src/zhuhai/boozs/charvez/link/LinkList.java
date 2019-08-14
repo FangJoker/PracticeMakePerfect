@@ -1,4 +1,4 @@
-package boozs.charvez.link;
+package zhuhai.boozs.charvez.link;
 
 /**
  * 单向链表的实现
