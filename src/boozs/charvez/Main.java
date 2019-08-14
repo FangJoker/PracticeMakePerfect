@@ -25,12 +25,7 @@ public class Main {
 ////        BiTree.firstOrderTraverse(tree);
 ////        System.out.println("=============");
 ////        System.out.println(BiTree.nodeCount(tree));
-//            DoubleLinkList doubleLinkList = new DoubleLinkList();
-//            for (int i=0; i<500;i++){
-//                doubleLinkList.addElem(i);
-//            }
-//            doubleLinkList.printLink();
-//           System.out.println( doubleLinkList.getIndexOf(450));
+
         int[] array = new int[6];
         array[0] = 0;
         array[1] = 3;
@@ -42,13 +37,6 @@ public class Main {
         for (int i =0; i<array.length; i++)
         {
             System.out.println(array[i]);
-        }
-    }
-
-    public static void printArry(char[] arry, int k) {
-        if (k < arry.length) {
-            System.out.println(arry[k]);
-            printArry(arry, k + 1);
         }
     }
 
