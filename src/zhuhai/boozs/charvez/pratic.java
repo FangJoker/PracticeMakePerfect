@@ -1,9 +1,13 @@
 package zhuhai.boozs.charvez;
 
 
-import zhuhai.boozs.charvez.sort.sortUntil;
+import zhuhai.boozs.charvez.search.SerachUntil;
+import zhuhai.boozs.charvez.sort.SortUntil;
 
-public class Main {
+/**
+ * @author charvez
+ */
+public class pratic {
 
     public static void main(String[] args) {
 //        BiNode biTree = new BiNode();
@@ -32,11 +36,13 @@ public class Main {
         array[3] = 6;
         array[4] = 5;
         array[5] = 1;
-        sortUntil.insertSort(array);
+        SortUntil.quickSort(array);
         for (int i =0; i<array.length; i++)
         {
             System.out.println(array[i]);
         }
+
+
     }
 
 }
