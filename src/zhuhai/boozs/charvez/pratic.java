@@ -29,14 +29,15 @@ public class pratic {
 ////        System.out.println("=============");
 ////        System.out.println(BiTree.nodeCount(tree));
 
-        int[] array = new int[6];
-        array[0] = 0;
-        array[1] = 3;
+        int[] array = new int[7];
+        array[0] = 3;
+        array[1] = 0;
         array[2] = 2;
-        array[3] = 6;
+        array[3] = 2;
         array[4] = 5;
         array[5] = 1;
-        SortUntil.quickSort(array);
+        array[6] = 4;
+        SortUntil.heapSort(array);
         for (int i =0; i<array.length; i++)
         {
             System.out.println(array[i]);
